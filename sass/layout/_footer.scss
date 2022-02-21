@@ -2,7 +2,12 @@ footer{
     color: white;
     background-color: rgb(63, 63, 63);
 
+        a{
+            color: white;
+        }
+        
         h2{
+            color: white;
             font-weight: normal;
             font-size: 22px;
             margin-left: 20px;
@@ -11,16 +16,19 @@ footer{
         }
 
         ul{
+            color: white;
             margin-left: -20px;
             margin-top: 0;
             margin-bottom: 0;
             list-style-type: none;
             padding-bottom: 20px;
                 li{
+                    color: white;
                     padding-bottom: 7px;
                 }
 
                 i{
+                    color: white;
                     padding-right: 7px;
                 }
         }

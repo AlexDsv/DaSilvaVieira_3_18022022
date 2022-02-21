@@ -19,6 +19,10 @@ footer h2 {
   font-family: "Shrikhand", "sans-serif";
 }
 
+.rest_menu h2 {
+  font-family: "Shrikhand", "sans-serif";
+}
+
 h3 {
   font-weight: bold;
 }
@@ -181,7 +185,11 @@ footer {
   color: white;
   background-color: #3f3f3f;
 }
+footer a {
+  color: white;
+}
 footer h2 {
+  color: white;
   font-weight: normal;
   font-size: 22px;
   margin-left: 20px;
@@ -189,6 +197,7 @@ footer h2 {
   padding-top: 15px;
 }
 footer ul {
+  color: white;
   margin-left: -20px;
   margin-top: 0;
   margin-bottom: 0;
@@ -196,10 +205,69 @@ footer ul {
   padding-bottom: 20px;
 }
 footer ul li {
+  color: white;
   padding-bottom: 7px;
 }
 footer ul i {
+  color: white;
   padding-right: 7px;
+}
+
+.rest_menu {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  border-radius: 20px 20px 0 0;
+  background-color: #f3f3f3;
+}
+.rest_menu h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.rest_menu h3 {
+  font-weight: normal;
+}
+
+.restaurant_pic img {
+  width: 100%;
+  height: 200px;
+}
+
+.menu_card {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
+}
+.menu_card_heading {
+  padding-left: 15px;
+  width: 80%;
+}
+.menu_card_heading p {
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu_card_heading h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.menu_card_price {
+  width: 20%;
+}
+.menu_card_price p {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
