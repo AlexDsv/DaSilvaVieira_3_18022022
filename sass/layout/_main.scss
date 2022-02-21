@@ -1,0 +1,142 @@
+main{
+    .location{
+        background: #f0f0f0;
+    
+            p{
+                color: rgb(58, 58, 58);
+                font-weight: bold;
+                margin: 0;
+                text-align: center;
+                padding: 15px;
+            }
+
+            i{
+                text-align: center;
+                padding-right: 15px;
+                font-size: 20px;
+                color: rgb(58, 58, 58);
+            }
+    }
+
+    .panel{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: rgb(245, 245, 245);
+
+            h2{
+                padding-top: 25px;
+                text-align: center;
+                margin: 0;
+            }
+
+            p{
+                color: rgb(85, 85, 85);
+                font-weight: normal;
+            }
+    }
+
+    .steps{
+        background-color: white;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        p{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        &__list{
+            font-weight: bold;
+
+            span{
+
+                font-weight: normal;
+                color: white;
+                background-color: $color-primary;
+                border-radius: 75px;
+                padding: 3px 8px 3px 8px;
+                position: absolute;
+                left: 5px;
+            }
+
+            .list_1, .list_2, .list_3{
+                align-items: center;
+                border-radius: 15px;
+                background-color:rgb(245, 245, 245);
+                width: 100%;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            i{
+                color: rgb(85, 85, 85);
+                padding-left: 40px;
+                padding-right: 20px;
+            }
+        }
+    }  
+}
+
+.restaurants{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(245, 245, 245);
+    &_cards{
+        &_1, &_2, &_3, &_4{
+            margin-bottom: 25px;
+            box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px 20px 20px 20px;
+            width: 100%;
+            height: 230px;
+                img{
+                    border-radius: 20px 20px 0 0;
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+        }
+    }
+}
+
+.rc_1_heading, .rc_2_heading, .rc_3_heading, .rc_4_heading{
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    margin-top: -3px;
+        h3{
+            font-size: 18px;
+            margin-bottom: 0px;
+            margin-top:-3px;
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+
+        p{
+            font-size: 18px;
+            margin-top: 0px;
+            padding-left: 10px;
+        }
+}
+
+.rc_1_desc, .rc_2_desc, .rc_3_desc, .rc_4_desc{
+    width: 80%;
+}
+
+.rc_1_icon, .rc_2_icon, .rc_3_icon, .rc_4_icon{
+    width: 20%;
+        i{
+        font-size: 25px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+}

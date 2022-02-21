@@ -2,15 +2,204 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+}
+
 header h1 {
   font-family: "Shrikhand", "sans-serif";
 }
 
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+}
+
+h3 {
+  font-weight: bold;
+}
+
 header h1 {
+  position: relative;
   text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+main .location {
+  background: #f0f0f0;
+}
+main .location p {
+  color: #3a3a3a;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding: 15px;
+}
+main .location i {
+  text-align: center;
+  padding-right: 15px;
+  font-size: 20px;
+  color: #3a3a3a;
+}
+main .panel {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: whitesmoke;
+}
+main .panel h2 {
+  padding-top: 25px;
+  text-align: center;
+  margin: 0;
+}
+main .panel p {
+  color: #555555;
+  font-weight: normal;
+}
+main .steps {
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+main .steps p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+main .steps__list {
+  font-weight: bold;
+}
+main .steps__list span {
+  font-weight: normal;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 75px;
+  padding: 3px 8px 3px 8px;
+  position: absolute;
+  left: 5px;
+}
+main .steps__list .list_1, main .steps__list .list_2, main .steps__list .list_3 {
+  align-items: center;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
+}
+main .steps__list i {
+  color: #555555;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.restaurants {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+}
+.restaurants_cards_1, .restaurants_cards_2, .restaurants_cards_3, .restaurants_cards_4 {
+  margin-bottom: 25px;
+  box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px 20px 20px 20px;
+  width: 100%;
+  height: 230px;
+}
+.restaurants_cards_1 img, .restaurants_cards_2 img, .restaurants_cards_3 img, .restaurants_cards_4 img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.rc_1_heading, .rc_2_heading, .rc_3_heading, .rc_4_heading {
+  border-radius: 0 0 20px 20px;
+  background-color: white;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  margin-top: -3px;
+}
+.rc_1_heading h3, .rc_2_heading h3, .rc_3_heading h3, .rc_4_heading h3 {
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: -3px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.rc_1_heading p, .rc_2_heading p, .rc_3_heading p, .rc_4_heading p {
+  font-size: 18px;
+  margin-top: 0px;
+  padding-left: 10px;
+}
+
+.rc_1_desc, .rc_2_desc, .rc_3_desc, .rc_4_desc {
+  width: 80%;
+}
+
+.rc_1_icon, .rc_2_icon, .rc_3_icon, .rc_4_icon {
+  width: 20%;
+}
+.rc_1_icon i, .rc_2_icon i, .rc_3_icon i, .rc_4_icon i {
+  font-size: 25px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.panel__button {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  width: 225px;
+  height: 50px;
+  border-radius: 50px 50px 50px 50px;
+  border: none;
+  box-shadow: 5px 4px 19px 6px rgba(0, 0, 0, 0.19);
+  transition: all 150ms;
+}
+.panel__button:hover {
+  transform: scale(1.02);
+  opacity: 93%;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  background-color: #3f3f3f;
+}
+footer h2 {
+  font-weight: normal;
+  font-size: 22px;
+  margin-left: 20px;
+  margin-top: 0;
+  padding-top: 15px;
+}
+footer ul {
+  margin-left: -20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+footer ul li {
+  padding-bottom: 7px;
+}
+footer ul i {
+  padding-right: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
