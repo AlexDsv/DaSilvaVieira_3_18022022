@@ -1,0 +1,32 @@
+.loader{
+  span{
+  margin: -1.5px;
+  padding: 0;
+  -webkit-animation: loading .7s infinite;
+          animation: loading .7s infinite;
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i+1}) {
+      -webkit-animation-delay: #{$i*.1}s;
+              animation-delay: #{$i*.1}s;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes loading {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+  }
+
+@keyframes loading {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+  }
