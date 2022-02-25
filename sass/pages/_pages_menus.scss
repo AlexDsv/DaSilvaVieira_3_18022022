@@ -29,9 +29,28 @@
         }
 
         h3{
+            border-bottom: 3px solid;
+            display: block;
+            width: 100px;
+            border-image: linear-gradient(to right, $color-tertiary 50%, #F3F3F3 50%) 100% 1;
             margin-top: 35px;
             font-weight: normal;
         }
+}
+
+.rest_menu .fa-solid{
+    font-size: 26px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    @include radient-bg;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+    right: 29px;
+    top: 24px;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .restaurant_pic img{

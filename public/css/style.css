@@ -147,18 +147,49 @@ main .steps__list i {
 }
 
 .rc_1_desc, .rc_2_desc, .rc_3_desc, .rc_4_desc {
-  width: 80%;
+  position: relative;
+  width: 100%;
+}
+.rc_1_desc i, .rc_2_desc i, .rc_3_desc i, .rc_4_desc i {
+  font-size: 27px;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+}
+.rc_1_desc .fa-solid, .rc_2_desc .fa-solid, .rc_3_desc .fa-solid, .rc_4_desc .fa-solid {
+  font-size: 29px;
+  top: 20.7px;
+  right: 34px;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.rc_1_desc .fa-solid:hover, .rc_2_desc .fa-solid:hover, .rc_3_desc .fa-solid:hover, .rc_4_desc .fa-solid:hover {
+  opacity: 1;
 }
 
-.rc_1_icon, .rc_2_icon, .rc_3_icon, .rc_4_icon {
-  width: 20%;
-}
-.rc_1_icon i, .rc_2_icon i, .rc_3_icon i, .rc_4_icon i {
-  font-size: 25px;
+.New {
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.New::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #99E2D0;
+  color: #278870;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 15px;
+  width: 68px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+  right: 15px;
 }
 
 .panel__button {
@@ -167,8 +198,8 @@ main .steps__list i {
   font-weight: bold;
   color: white;
   font-size: 16px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   width: 225px;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   height: 50px;
   border-radius: 50px 50px 50px 50px;
   border: none;
@@ -248,8 +279,27 @@ footer ul i {
   padding-left: 10px;
 }
 .rest_menu h3 {
+  border-bottom: 3px solid;
+  display: block;
+  width: 100px;
+  border-image: linear-gradient(to right, #99E2D0 50%, #F3F3F3 50%) 100% 1;
   margin-top: 35px;
   font-weight: normal;
+}
+
+.rest_menu .fa-solid {
+  font-size: 26px;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+  right: 29px;
+  top: 24px;
+}
+.rest_menu .fa-solid:hover {
+  opacity: 1;
 }
 
 .restaurant_pic img {

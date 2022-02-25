@@ -5,8 +5,8 @@
             font-weight: bold;
             color: white;
             font-size: 16px;
-            background: linear-gradient(to bottom right, $color-secondary, $color-primary);
             width: 225px;
+            @include radient-bg;
             height: 50px;
             border-radius: 50px 50px 50px 50px;
             border: none;

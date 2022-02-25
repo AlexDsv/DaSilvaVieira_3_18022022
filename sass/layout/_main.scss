@@ -127,16 +127,50 @@ main{
 }
 
 .rc_1_desc, .rc_2_desc, .rc_3_desc, .rc_4_desc{
-    width: 80%;
+    position: relative;
+    width: 100%;
+        i{
+            font-size: 27px;
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            
+        }
+
+        .fa-solid{
+            font-size: 29px;
+            top: 20.7px;
+            right: 34px;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            @include radient-bg;
+            opacity: 0;
+            transition: all 250ms ease-in-out;
+            &:hover{
+                opacity: 1;
+            }
+        }
 }
 
-.rc_1_icon, .rc_2_icon, .rc_3_icon, .rc_4_icon{
-    width: 20%;
-        i{
-        font-size: 25px;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        }
+
+.New{
+    position: relative;
+}
+
+.New::before{
+    content: "Nouveau";
+    position:absolute;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 40%);
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 15px;
+    width: 68px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    right: 15px;
 }
