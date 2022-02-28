@@ -13,7 +13,7 @@
     padding-top: 15px;
     border-radius: 20px 20px 0 0;
     background-color: #f3f3f3;
-    position: relative;
+    position: relative;         /* position relative pour passer au dessus de l'image */
         .fa-solidheart, .fa-regularheart{
             font-size: 24px;
             position: absolute;
@@ -29,12 +29,17 @@
         }
 
         h3{
+            animation: fadein 1s;
             border-bottom: 3px solid;
             display: block;
             width: 100px;
             border-image: linear-gradient(to right, $color-tertiary 50%, #F3F3F3 50%) 100% 1;
             margin-top: 35px;
             font-weight: normal;
+        }
+
+        &:hover{
+            cursor: pointer;
         }
 }
 
@@ -44,7 +49,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     @include radient-bg;
-    opacity: 0;
+    opacity: 0;                                     /* opacity au survol du coeur animation */
     transition: all 250ms ease-in-out;
     right: 29px;
     top: 24px;
@@ -60,7 +65,10 @@
 }
 
 .menu_card{
+    animation: 750ms ease 250.609ms 1 normal none running fadein;;
+    white-space: nowrap;            /* ellipsis pour points de suspension avec animation */
     overflow: hidden;
+    text-overflow: ellipsis;
     margin-bottom: 15px;
     display: flex;
     width: 100%;
@@ -68,15 +76,25 @@
     border-radius: 20px 20px 20px 20px;
     box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.02);
         &_heading{
+            white-space: nowrap;        /* ellipsis pour points de suspension avec animation */
+            overflow: hidden;
+            text-overflow: ellipsis;
             padding-left: 15px;
             width: 80%;
+            min-width: 60%;
                 p{
+                    text-overflow: ellipsis;        /* ellipsis pour points de suspension avec animation */
+                    white-space: nowrap;
+                    overflow: hidden;
                     padding-bottom: 10px;
                     margin-top: 0;
                     margin-bottom: 0;
                 }
 
                 h4{
+                    text-overflow: ellipsis;        /* ellipsis pour points de suspension avec animation */
+                    white-space: nowrap;
+                    overflow: hidden;
                     font-size: 18px;
                     margin-top: 0;
                     margin-bottom: 0;
@@ -101,6 +119,10 @@
         &:hover .validated{
             margin-right: 0px;
         }
+
+        &:hover .fa-circle-check{
+            animation: checkmark 475ms ease-in-out;     /* rotation icone check */
+        }
 }
 
 .validated{
@@ -109,8 +131,8 @@
     color: white;
     font-size: 15px;
     margin-right: -100px;
-    transition: all 350ms ease-in-out;
-    .fa-circle-check{
+    transition: all 450ms ease-in-out;      /* décalage div verte check */
+    #fa-check-center{
         font-size: 23px;
         position: relative;
         left: 50%;
@@ -121,10 +143,26 @@
 
 @keyframes checkmark{
     0% {
-        margin-right: 0px;
+        transform: translate(-50%, -50%) rotate(0deg);  
     }
-
+                                                                /* Keyframe rotation/centre icone check */
     100% {
-        margin-right: -10px;
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+@keyframes fadein{
+    0% {
+        transform: translateY(8vh);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
