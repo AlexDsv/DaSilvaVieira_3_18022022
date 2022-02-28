@@ -270,7 +270,7 @@ footer ul i {
   background-color: #f3f3f3;
   position: relative;
 }
-.rest_menu i {
+.rest_menu .fa-solidheart, .rest_menu .fa-regularheart {
   font-size: 24px;
   position: absolute;
   right: 30px;
@@ -291,7 +291,7 @@ footer ul i {
   font-weight: normal;
 }
 
-.rest_menu .fa-solid {
+.rest_menu .fa-solidheart {
   font-size: 26px;
   color: transparent;
   background-clip: text;
@@ -302,7 +302,7 @@ footer ul i {
   right: 29px;
   top: 24px;
 }
-.rest_menu .fa-solid:hover {
+.rest_menu .fa-solidheart:hover {
   opacity: 1;
 }
 
@@ -313,6 +313,7 @@ footer ul i {
 }
 
 .menu_card {
+  overflow: hidden;
   margin-bottom: 15px;
   display: flex;
   width: 100%;
@@ -337,6 +338,7 @@ footer ul i {
   padding-bottom: 5px;
 }
 .menu_card_price {
+  margin-left: auto;
   width: 20%;
 }
 .menu_card_price p {
@@ -348,7 +350,34 @@ footer ul i {
   left: 70%;
   transform: translate(-50%, -50%);
 }
+.menu_card:hover .validated {
+  margin-right: 0px;
+}
 
+.validated {
+  width: 100px;
+  background-color: #99E2D0;
+  color: white;
+  font-size: 15px;
+  margin-right: -100px;
+  transition: all 350ms ease-in-out;
+}
+.validated .fa-circle-check {
+  font-size: 23px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes checkmark {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: -10px;
+  }
+}
 .loader {
   font-size: 50px;
   width: 100%;
@@ -410,6 +439,22 @@ footer ul i {
   }
   50% {
     transform: translateY(15px);
+  }
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
   }
 }
 @-webkit-keyframes disappear {
