@@ -85,6 +85,13 @@ main .steps p {
 main .steps__list {
   font-weight: bold;
 }
+@media screen and (min-width: 880px) {
+  main .steps__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .steps__list span {
   font-weight: normal;
   color: white;
@@ -92,15 +99,23 @@ main .steps__list span {
   border-radius: 75px;
   padding: 3px 8px 3px 8px;
   position: absolute;
-  left: 5px;
+  left: -10px;
+}
+@media screen and (min-width: 1000px) {
+  main .steps__list span {
+    left: -12px;
+  }
 }
 main .steps__list .list_1, main .steps__list .list_2, main .steps__list .list_3 {
+  position: relative;
   align-items: center;
   border-radius: 15px;
   background-color: whitesmoke;
   width: 100%;
   margin-top: 25px;
   margin-bottom: 25px;
+  margin-left: 12.5px;
+  margin-right: 12.5px;
   box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
 }
 main .steps__list i {
@@ -116,6 +131,14 @@ main .steps__list i {
   padding-bottom: 20px;
   background-color: whitesmoke;
 }
+@media screen and (min-width: 600px) {
+  .restaurants_cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .restaurants_cards_1, .restaurants_cards_2, .restaurants_cards_3, .restaurants_cards_4 {
   margin-bottom: 25px;
   box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
@@ -123,11 +146,38 @@ main .steps__list i {
   width: 100%;
   height: 230px;
 }
+@media screen and (min-width: 1000px) {
+  .restaurants_cards_1, .restaurants_cards_2, .restaurants_cards_3, .restaurants_cards_4 {
+    margin-bottom: 100px;
+  }
+}
 .restaurants_cards_1 img, .restaurants_cards_2 img, .restaurants_cards_3 img, .restaurants_cards_4 img {
   border-radius: 20px 20px 0 0;
   width: 100%;
   height: 70%;
   object-fit: cover;
+}
+@media screen and (min-width: 1000px) {
+  .restaurants_cards_1 img, .restaurants_cards_2 img, .restaurants_cards_3 img, .restaurants_cards_4 img {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .restaurants_cards_1, .restaurants_cards_2, .restaurants_cards_3, .restaurants_cards_4 {
+    width: 44%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .restaurants_cards_1, .restaurants_cards_2, .restaurants_cards_3, .restaurants_cards_4 {
+    max-width: 525px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .restaurants_cards_1, .restaurants_cards_2, .restaurants_cards_3, .restaurants_cards_4 {
+    max-width: 430px;
+  }
 }
 
 .rc_1_heading, .rc_2_heading, .rc_3_heading, .rc_4_heading {
@@ -137,6 +187,11 @@ main .steps__list i {
   width: 100%;
   display: flex;
   margin-top: -3px;
+}
+@media screen and (min-width: 1000px) {
+  .rc_1_heading, .rc_2_heading, .rc_3_heading, .rc_4_heading {
+    box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
+  }
 }
 .rc_1_heading h3, .rc_2_heading h3, .rc_3_heading h3, .rc_4_heading h3 {
   font-size: 18px;
@@ -272,6 +327,11 @@ footer ul i {
   position: relative;
   /* position relative pour passer au dessus de l'image */
 }
+@media screen and (min-width: 1100px) {
+  .rest_menu {
+    padding: 40px;
+  }
+}
 .rest_menu .fa-solidheart, .rest_menu .fa-regularheart {
   font-size: 24px;
   position: absolute;
@@ -281,7 +341,7 @@ footer ul i {
 .rest_menu h2 {
   margin: 0;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 28px;
   padding-left: 10px;
 }
 .rest_menu h3 {
@@ -320,7 +380,7 @@ footer ul i {
 }
 
 .menu_card {
-  animation: 750ms ease 250.609ms 1 normal none running fadein;
+  min-width: 270px;
   white-space: nowrap;
   /* ellipsis pour points de suspension avec animation */
   overflow: hidden;
@@ -331,6 +391,20 @@ footer ul i {
   background-color: white;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.02);
+}
+@media screen and (min-width: 600px) {
+  .menu_card {
+    width: 43%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 885px) {
+  .menu_card {
+    width: 31%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 .menu_card_heading {
   white-space: nowrap;
@@ -421,6 +495,39 @@ footer ul i {
     opacity: 1;
   }
 }
+.Entree {
+  animation: 750ms ease 1 normal none running fadein;
+}
+
+.Plats {
+  animation: 750ms ease 125ms 1 normal none running fadein;
+}
+
+.Desserts {
+  animation: 750ms ease-in-out 250ms 1 normal none running fadein;
+}
+
+@media screen and (min-width: 600px) {
+  .Entree_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Plats_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Desserts_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .loader {
   font-size: 50px;
   width: 100%;
