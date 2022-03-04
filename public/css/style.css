@@ -140,11 +140,15 @@ main .steps__list i {
   }
 }
 .restaurants_cards_1, .restaurants_cards_2, .restaurants_cards_3, .restaurants_cards_4 {
+  transition: 250ms;
   margin-bottom: 25px;
   box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.1);
   border-radius: 20px 20px 20px 20px;
   width: 100%;
   height: 230px;
+}
+.restaurants_cards_1:hover, .restaurants_cards_2:hover, .restaurants_cards_3:hover, .restaurants_cards_4:hover {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 1000px) {
   .restaurants_cards_1, .restaurants_cards_2, .restaurants_cards_3, .restaurants_cards_4 {
@@ -391,6 +395,10 @@ footer ul i {
   background-color: white;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.02);
+  transition: 250ms;
+}
+.menu_card:hover {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 600px) {
   .menu_card {
@@ -486,25 +494,31 @@ footer ul i {
   0% {
     transform: translateY(8vh);
     opacity: 0;
+    animation-fill-mode: backwards;
   }
   40% {
     opacity: 0;
+    animation-fill-mode: backwards;
   }
   100% {
     transform: translateY(0px);
     opacity: 1;
+    animation-fill-mode: backwards;
   }
 }
 .Entree {
   animation: 750ms ease 1 normal none running fadein;
+  animation-fill-mode: backwards;
 }
 
 .Plats {
   animation: 750ms ease 125ms 1 normal none running fadein;
+  animation-fill-mode: backwards;
 }
 
 .Desserts {
   animation: 750ms ease-in-out 250ms 1 normal none running fadein;
+  animation-fill-mode: backwards;
 }
 
 @media screen and (min-width: 600px) {

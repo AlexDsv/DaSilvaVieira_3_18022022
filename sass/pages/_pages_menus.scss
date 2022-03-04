@@ -80,6 +80,10 @@
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 5px 4px 10px 6px rgba(0, 0, 0, 0.02);
+    transition: 250ms;
+        &:hover{
+            transform: scale(1.05);
+        }
 
         @media screen and (min-width: 600px){
             width: 43%;
@@ -173,27 +177,33 @@
     0% {
         transform: translateY(8vh);
         opacity: 0;
+        animation-fill-mode: backwards;
     }
 
     40% {
         opacity: 0;
+        animation-fill-mode: backwards;
     }
 
     100% {transform: translateY(0px);
         opacity: 1;
+        animation-fill-mode: backwards;
     }
 }
 
 .Entree{
     animation: 750ms ease 1 normal none running fadein;
+    animation-fill-mode: backwards;
 }
 
 .Plats{
     animation: 750ms ease 125ms 1 normal none running fadein;
+    animation-fill-mode: backwards;
 }
 
 .Desserts{
     animation: 750ms ease-in-out 250ms 1 normal none running fadein;
+    animation-fill-mode: backwards;
 }
 
 .Entree_list{
