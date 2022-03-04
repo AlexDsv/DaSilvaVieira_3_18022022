@@ -155,11 +155,13 @@
     margin-right: -100px;
     transition: all 450ms ease-in-out;      /* décalage div verte check */
     #fa-check-center{
+        &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8, &_9, &_10{
         font-size: 23px;
         position: relative;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        }
     }
 }
 

@@ -473,7 +473,7 @@ footer ul i {
   transition: all 450ms ease-in-out;
   /* décalage div verte check */
 }
-.validated #fa-check-center {
+.validated #fa-check-center_1, .validated #fa-check-center_2, .validated #fa-check-center_3, .validated #fa-check-center_4, .validated #fa-check-center_5, .validated #fa-check-center_6, .validated #fa-check-center_7, .validated #fa-check-center_8, .validated #fa-check-center_9, .validated #fa-check-center_10 {
   font-size: 23px;
   position: relative;
   left: 50%;
