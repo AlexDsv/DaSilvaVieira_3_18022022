@@ -1,5 +1,5 @@
 .panel{
-        &__button{
+        &__button{                                              /* Même bouton utilisé plusieurs fois dans les différentes pages */
             margin-top: 20px;
             margin-bottom: 40px;
             font-weight: bold;
@@ -12,8 +12,8 @@
             border: none;
             box-shadow: 5px 4px 19px 6px rgba(0,0,0,0.19);
             transition: all 150ms;
-                &:hover{
-                    transform: scale(1.02);
+                &:hover{                                    /* Animation hover boutons */
+                    transform: scale(1.02); 
                     opacity: 93%;
                     cursor: pointer;
                 }
