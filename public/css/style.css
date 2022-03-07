@@ -230,7 +230,7 @@ main .steps__list i {
 .rc_1_desc .fa-solid, .rc_2_desc .fa-solid, .rc_3_desc .fa-solid, .rc_4_desc .fa-solid {
   /* Coeur avec dégradé pour animation hover */
   font-size: 29px;
-  top: 20.7px;
+  top: 20px;
   right: 34px;
   color: transparent;
   background-clip: text;
